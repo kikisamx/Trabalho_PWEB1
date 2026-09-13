@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Câmara Municipal de Vereadores de Picos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#"><img src="imgs/Camara_PicosNOVO.png" alt="Camara de Picos" class="logo"></a></li>
+                <li><a href="index.html"><img src="imgs/Camara_PicosNOVO.png" alt="Camara de Picos" class="logo"></a></li>
                 <li><a href="#">A Câmara</a></li>
                 <li><a href="#">Agenda</a></li>
                 <li><a href="faleconosco.html">Fale Conosco</a></li>
@@ -28,44 +28,22 @@
     </header>
 
     <main>
-        <h1>Câmara Municipal de Vereadores de Picos</h1>
+    <h1>Painel Administrativo</h1>
 
-        <section>
-            <h2>Sobre a Câmara</h2>
-            <p>
-                A Câmara Municipal de Picos é o órgão responsável por representar
-                os cidadãos e elaborar leis que atendem às necessidades do município.
-                Aqui você encontra informações sobre os vereadores, sessões e
-                serviços oferecidos à população.
-            </p>
-        </section>
+    <form class="login">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" required>
 
-        <section>
-            <h2>Notícias</h2>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
 
-            <div class="noticias">
-                <article class="noticia">
-                    <img src="imgs/noticiapraca.jpg" alt="Reunião de vereadores discute nova praça pública">
-                    <h3>Câmara aprova construção de nova praça no bairro Centro</h3>
-                    <p>Projeto prevê área de lazer e quadra esportiva para a comunidade.</p>
-                    <a href="noticias.html">Leia mais</a>
-                </article>
-
-                <article class="noticia">
-                    <img src="imgs/noticiatranspotespublicos.jpg" alt="Vereador apresenta projeto de lei sobre transporte público">
-                    <h3>Vereador propõe melhorias no transporte público municipal</h3>
-                    <p>Proposta inclui novas linhas de ônibus para bairros periféricos.</p>
-                    <a href="noticias.html">Leia mais</a>
-                </article>
-            </div>
-        </section>
-
-        <a href="#"><img src="imgs/faleconosco.jpg" alt="Banner Fale Conosco - clique para entrar em contato"></a>
-    </main>
+        <button type="submit">Entrar</button>
+    </form>
+</main>
 
     <footer>
 
-    <a href="#"><img src="imgs/Camara_PicosNOVO.png" alt="Camara Municipal de Picos" class="logo2"></a>
+    <a href="index.html"><img src="imgs/Camara_PicosNOVO.png" alt="Camara Municipal de Picos" class="logo2"></a>
 
     <div class="footer-info">
         <div class="footer-redes">
