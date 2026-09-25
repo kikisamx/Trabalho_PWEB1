@@ -18,36 +18,106 @@ body {
     line-height: 1.5;
 }
 
-header {
+.libras {
+    margin-top: 40vh;
+    right: 3vw;
+    position: fixed;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+    width: clamp(50px, 8vw, 100px);
+    height: clamp(50px, 8vw, 100px);
+    
+    border-radius: 20px;
+    border: 1px solid #222;
+    transition: all 0.3s ease-in-out;
+    background-color: #26518a;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 0;
+    color: rgb(255, 255, 255);
+}
+
+.libras p {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.libras img {
+    /* width: auto; */
+    height: 100%;
+    object-fit: contain;
+    right: 0;
+    margin-right: 0;
+}
+
+.libras:hover {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: clamp(200px, 18vw, 240px);
+    font-size: clamp(0.9rem, 1.4vw, 1.6rem);
+}
+
+.libras:hover p {
+    opacity: 1;
+}
+
+header {
+    position: fixed;
+    margin: 0 auto;
+    width: 100vw;
+    height: 10vh;
     flex-wrap: wrap;
     gap: 12px;
+    height: 20vh;
     background-color: var(--cor-principal);
     padding: 16px 24px;
+    top: 0;
+    left: 0;
+}
+
+nav{
+    height: 80%;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     gap: 50px;
+    height: 40%;
+}
+
+header nav ul li{
+    margin-top: auto;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1em;
     font-weight: bold;
+    transition: all 0.4s ease-in-out;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    font-size: 1.2em;
+    /* text-decoration: underline; */
 }
 
+
 .logo {
-    width: 300px;
-    height: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100px;
 }
 
 .loginico{
@@ -57,23 +127,33 @@ header nav ul li a:hover {
 }
 
 .busca {
-    display: flex;
-    gap: 8px;
+    display: block;
+    width: 40vw;
+    height: 25%;
+    margin: 0 auto;
+    /* background-color: #222; */
+    /* gap: 8px; */
 }
 
 .busca input {
-    padding: 6px 25px;
-    border: none;
+    display: inline;
+    border: 1px #444;
+    width: 90%;
+    height: 100%;
     border-radius: 4px;
 }
 
 .busca button {
-    padding: 1px 16px;
+    /* padding: 1px 16px; */
+    display: inline;
+    height: 100%;
+    width: 8%;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: var(--cor-secundaria);
     color: white;
     cursor: pointer;
+    margin: 0 auto;
 }
 .lupapesquisa{
     width: 20px;
@@ -82,8 +162,9 @@ header nav ul li a:hover {
 }
 
 main {
+    margin-top: 10vh;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 24px;
 }
 
