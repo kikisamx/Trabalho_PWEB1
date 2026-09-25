@@ -18,75 +18,7 @@ body {
     line-height: 1.5;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    background-color: var(--cor-principal);
-    padding: 16px 24px;
-}
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    width: 300px;
-    height: auto;
-}
-
-.loginico {
-    width: 40px;
-    height: auto;
-    filter: invert(100%);
-}
-
-.busca {
-    display: flex;
-    gap: 8px;
-}
-
-.busca input {
-    padding: 6px 25px;
-    border: none;
-    border-radius: 4px;
-}
-
-.busca button {
-    padding: 1px 16px;
-    border: none;
-    border-radius: 2px;
-    background-color: var(--cor-secundaria);
-    color: white;
-    cursor: pointer;
-}
-
-.lupapesquisa {
-    width: 20px;
-    height: auto;
-    filter: invert(100%);
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 24px;
-}
 
 h1 {
     color: var(--cor-principal);

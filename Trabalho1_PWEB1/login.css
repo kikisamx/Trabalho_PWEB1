@@ -1,85 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --cor-principal: #1B3A57;
-    --cor-secundaria: #4A7A96;
-    --cor-fundo: #F2F2F2;
-    --cor-texto: #222;
-}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-texto);
     background-color: #fff;
     line-height: 1.5;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    background-color: var(--cor-principal);
-    padding: 16px 24px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    width: 300px;
-    height: auto;
-}
-
-.loginico {
-    width: 40px;
-    height: auto;
-    filter: invert(100%);
-}
-
-.busca {
-    display: flex;
-    gap: 8px;
-}
-
-.busca input {
-    padding: 6px 25px;
-    border: none;
-    border-radius: 4px;
-}
-
-.busca button {
-    padding: 1px 16px;
-    border: none;
-    border-radius: 2px;
-    background-color: var(--cor-secundaria);
-    color: white;
-    cursor: pointer;
-}
-
-.lupapesquisa {
-    width: 20px;
-    height: auto;
-    filter: invert(100%);
 }
 
 main {
@@ -172,58 +96,4 @@ main > a img {
 
 .login button:hover {
     background-color: var(--cor-secundaria);
-}
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--cor-principal);
-    color: white;
-    padding: 24px;
-}
-
-.logo2 {
-    width: 250px;
-    height: auto;
-}
-
-.footer-info {
-    display: contents;
-}
-
-.footer-redes,
-.footer-contato {
-    text-align: center;
-}
-
-.footer-redes ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin: 12px 0;
-}
-
-.footer-redes ul img {
-    width: 32px;
-    height: 32px;
-}
-
-.footer-contato a {
-    display: block;
-    color: white;
-    margin-top: 6px;
-}
-
-.telefone,
-.localizacao {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-footer a {
-    color: white;
 }

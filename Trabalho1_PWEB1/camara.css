@@ -1,0 +1,36 @@
+:root {
+    --cor-principal: #1B3A57;
+    --cor-secundaria: #4A7A96;
+    --cor-fundo: #F2F2F2;
+    --cor-texto: #222;
+}
+
+.vereador{
+    color: var(--cor-principal);
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 5vw;
+}
+
+h1 h2{
+    color: var(--cor-secundaria);
+}
+
+.vereador img{
+    width: clamp(140px, 8vw, 240px);
+}
+
+.vereador p {
+    margin: 30px 30px;
+    text-align: justify;
+}
+
+main {
+    margin-top: 20vh !important;
+}
