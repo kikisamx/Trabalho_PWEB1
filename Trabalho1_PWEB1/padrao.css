@@ -122,13 +122,13 @@ header nav ul li a:hover {
 .logo {
     margin-right: auto;
     width: auto;
-    height: 115px;
-    top: -27px;
+    height: 105px;
+    top: -25px;
     position: relative;
 }
 
 .loginico{
-    width: 40px;
+    width: 49px;
     height: auto;
     filter: invert(100%);
 }
@@ -143,7 +143,7 @@ header nav ul li a:hover {
     align-items: center;
     gap: 5px;
     position: relative;
-    top: -5px;
+    top: -6px;
 }
 
 .busca input{
@@ -178,11 +178,6 @@ main {
     padding: 24px;
     flex: 1;
 }
-
-
-/* ===== FOOTER (LOGO + REDES SOCIAIS + CONTATO) ===== */
-
-/* ===== FOOTER (LOGO + REDES SOCIAIS + CONTATO) ===== */
 
 footer {
     display: flex;
