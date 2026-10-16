@@ -97,3 +97,27 @@ main > a img {
 .login button:hover {
     background-color: var(--cor-secundaria);
 }
+
+/* ===== LEMBRAR USUÁRIO (COOKIE) ===== */
+
+.login .lembrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login .lembrar input {
+    width: auto;
+    padding: 0;
+}
+
+.login .lembrar label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.mensagem-login {
+    font-size: 14px;
+    color: var(--cor-principal);
+    min-height: 1.2em;
+}

@@ -49,3 +49,16 @@ main > a img {
     display: grid;
     gap: 4vh;
 }
+
+.info-visita {
+    background-color: var(--cor-fundo);
+    border-left: 4px solid var(--cor-secundaria);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+}
+
+.info-visita a {
+    color: var(--cor-principal);
+    font-weight: bold;
+}

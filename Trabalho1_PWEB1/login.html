@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="padrao.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <script src="cookies.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
                 <li><a href="camara.html">A Câmara</a></li>
                 <!-- <li><a href="#">Agenda</a></li> -->
                 <li><a href="faleconosco.html">Fale Conosco</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
                 <!-- <li><a href="login.html"><img src="imgs/icologin.png" alt="icone de login" class="loginico"></a></li> -->
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -36,14 +37,21 @@
     <main>
     <h1>Painel Administrativo</h1>
 
-    <form class="login">
+    <form class="login" id="form-login">
         <label for="usuario">Usuário</label>
         <input type="text" id="usuario" name="usuario" required>
 
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha" required>
 
+        <div class="lembrar">
+            <input type="checkbox" id="lembrar" name="lembrar">
+            <label for="lembrar">Lembrar meu usuário</label>
+        </div>
+
         <button type="submit">Entrar</button>
+
+        <p id="mensagem-login" class="mensagem-login" role="status"></p>
     </form>
 </main>
 
@@ -69,5 +77,13 @@
     </div>
 
 </footer>
+
+    <div id="banner-cookies" class="banner-cookies" role="region" aria-label="Aviso de cookies" hidden>
+        <p>Este site usa cookies para lembrar suas preferências, como a data da sua última visita e o seu usuário no login. Você aceita?</p>
+        <div class="banner-botoes">
+            <button type="button" id="btn-aceitar-cookies">Aceitar</button>
+            <button type="button" id="btn-recusar-cookies">Recusar</button>
+        </div>
+    </div>
 </body>
 </html>
