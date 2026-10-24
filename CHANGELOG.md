@@ -49,3 +49,17 @@
 - Usar `sessionStorage` para guardar rascunhos do formulário "Fale Conosco" e filtros.
 - Adicionar busca de vereadores e notícias sem precisar recarregar a página.
 - Ajustar o site para telas menores usando `@media`.
+
+## 23/10/2026
+
+### Adicionado
+- Busca sem recarregar a página (`pesquisa.js`), que filtra enquanto o usuário digita.
+  - Funciona nas páginas Início, A Câmara e Notícias.
+  - Ignora maiúsculas e acentos.
+  - Mostra a mensagem "Nenhum resultado encontrado" quando nada bate.
+  - Ao apertar Enter ou clicar na lupa, a página rola até o primeiro resultado.
+- Regra `[hidden] { display: none !important; }` no `padrao.css`, para os itens filtrados realmente sumirem.
+-Mudança de tema salva em `localStorage`
+
+### Corrigido
+- Formulário de pesquisa, que recarregava a página ao apertar Enter.

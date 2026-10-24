@@ -9,13 +9,25 @@
     --cor-secundaria: #4A7A96;
     --cor-fundo: #F2F2F2;
     --cor-texto: #222;
+    --cor-pagina: #fff;
+    --cor-link: #1B3A57;
+    --cor-titulo: #1B3A57;
 }
 
+[data-tema="escuro"] {
+    --cor-principal: #1B3A57;
+    --cor-secundaria: #3a6a86;
+    --cor-fundo: #1e1e1e;
+    --cor-texto: #eee;
+    --cor-pagina: #121212;
+    --cor-link: #8ab4d8;
+    --cor-titulo: #ffffff;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-texto);
-    background-color: #fff;
+    background-color: var(--cor-pagina);
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
@@ -235,15 +247,11 @@ footer a {
 }
 
 
-/* ===== ATRIBUTO HIDDEN ===== */
-/* Garante que elementos com "hidden" sumam mesmo com display definido em outra regra */
 
 [hidden] {
     display: none !important;
 }
 
-
-/* ===== BANNER DE COOKIES ===== */
 
 .banner-cookies {
     position: fixed;
@@ -292,4 +300,23 @@ footer a {
 .banner-cookies button:focus-visible {
     outline: 3px solid #ffd54a;
     outline-offset: 2px;
+}
+
+.tema{
+    margin-left: 4%;
+    width: 6%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.tema:hover{
+    transform: rotate(180deg);
+    width: 7%;
+}
+
+main a {
+    color: var(--cor-link);
+}
+
+[data-tema="escuro"] main :is(h1, h2, h3, h4, p, li, span, time, label, a) {
+    color: #fff !important;
 }
