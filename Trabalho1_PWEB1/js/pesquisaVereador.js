@@ -9,12 +9,20 @@ document.querySelector("main").appendChild(vazio);
 
 const normalizar = t => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
+function textoPesquisavel(item) {
+  const partes = [];
+  item.querySelectorAll("h2, h3, p, time, img[alt]").forEach(el => {
+    partes.push(el.tagName === "IMG" ? el.alt : el.textContent);
+  });
+  return partes.join(" ");
+}
+
 function filtrar() {
   const termo = normalizar(barra.value);
   let primeiro = null;
 
   itens.forEach(item => {
-    const bate = normalizar(item.textContent).includes(termo);
+    const bate = normalizar(textoPesquisavel(item)).includes(termo);
     item.hidden = !bate;
     if (bate && !primeiro) primeiro = item;
   });
@@ -30,3 +38,7 @@ form.addEventListener("submit", e => {
   const primeiro = filtrar();
   if (primeiro) primeiro.scrollIntoView({ behavior: "smooth", block: "start" });
 });
+
+if (barra && barra.value) {
+  filtrar();
+}

@@ -129,6 +129,13 @@ function excluirNoticia(id) {
         return n.id !== id;
     });
     salvarNoticias(noticias);
+
+    ["noticias_favoritas", "noticias_lidas"].forEach(function (chave) {
+        salvarLocal(chave, lerLocal(chave, []).filter(function (x) {
+            return x !== id;
+        }));
+    });
+
     renderizarLista();
 }
 

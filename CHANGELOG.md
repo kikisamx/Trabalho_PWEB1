@@ -53,7 +53,7 @@
 ## 23/10/2026
 
 ### Adicionado
-- Busca sem recarregar a página (`pesquisa.js`), que filtra enquanto o usuário digita.
+- Busca sem recarregar a página (`pesquisaNoticia.js` e `pesquisaVereador.js`), que filtra enquanto o usuário digita.
   - Funciona nas páginas Início, A Câmara e Notícias.
   - Ignora maiúsculas e acentos.
   - Mostra a mensagem "Nenhum resultado encontrado" quando nada bate.

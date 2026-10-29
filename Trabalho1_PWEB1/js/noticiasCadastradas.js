@@ -15,23 +15,6 @@ function salvarNoticiasCadastradas(lista) {
   } catch (e) {}
 }
 
-function cadastrarNoticia({ titulo, data, texto, imagem }) {
-  const lista = lerNoticiasCadastradas();
-  const noticia = {
-    id: "c" + Date.now(),
-    titulo: titulo.trim(),
-    data: data,
-    texto: texto.trim(),
-    imagem: (imagem || "").trim()
-  };
-  lista.push(noticia);
-  salvarNoticiasCadastradas(lista);
-  return noticia;
-}
-
-function removerNoticiaCadastrada(id) {
-  salvarNoticiasCadastradas(lerNoticiasCadastradas().filter(n => n.id !== id));
-}
 
 function criarCardNoticia(n) {
   const card = document.createElement("article");
@@ -64,6 +47,16 @@ function criarCardNoticia(n) {
   p.textContent = n.texto;
 
   texto.append(time, h2, p);
+
+  if (n.link) {
+    const linkEl = document.createElement("a");
+    linkEl.href = n.link;
+    linkEl.textContent = "Saiba mais";
+    linkEl.target = "_blank";
+    linkEl.rel = "noopener noreferrer";
+    texto.appendChild(linkEl);
+  }
+
   card.appendChild(texto);
   return card;
 }
