@@ -1,0 +1,102 @@
+.oculto-js {
+    display: none !important;
+}
+
+/* Controle de tamanho da fonte (A- e A+) */
+.controle-fonte {
+    display: inline-flex;
+    gap: 4px;
+    margin-left: 8px;
+}
+
+header .controle-fonte button {
+    cursor: pointer;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    font: inherit;
+}
+
+header .controle-fonte button:hover:not(:disabled) {
+    filter: brightness(1.15);
+}
+
+header .controle-fonte button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Favoritos */
+.btn-favorito {
+    cursor: pointer;
+    padding: 4px 10px;
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+    background: transparent;
+    color: #c0392b;
+    font: inherit;
+}
+
+.btn-favorito[aria-pressed="true"] {
+    background: #c0392b;
+    color: #fff;
+}
+
+/* Notícia lida */
+.selo-lida {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #2e7d32;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.noticia-item.lida {
+    opacity: 0.8;
+}
+
+/* Vereador favorito */
+.vereador.favorito {
+    border-left: 4px solid #f1c40f;
+}
+
+/* Filtro de notícias */
+.filtro-noticias {
+    margin: 16px 0;
+}
+
+.filtro-noticias select {
+    padding: 4px 8px;
+    font: inherit;
+}
+
+/* Botão de fechar card */
+.com-fechar {
+    position: relative;
+}
+
+.fechar-card {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Mensagem de envio do formulário de contato */
+.mensagem-envio {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #2e7d32;
+}

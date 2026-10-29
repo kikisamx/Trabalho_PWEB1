@@ -63,3 +63,33 @@
 
 ### Corrigido
 - Formulário de pesquisa, que recarregava a página ao apertar Enter.
+
+## 28/10/2026
+
+### Adicionado
+- Login com redirecionamento para a página de cadastro de notícia (`login.js`).
+  - Autenticação simulada, sem servidor, com usuário e senha definidos no próprio código (`CREDENCIAIS_ADMIN`).
+  - Funções `autenticar` e `mostrarMensagemLogin`.
+  - Mensagem "Usuário ou senha incorretos." quando o login falha.
+- Página de cadastro de notícia (`cadastroNoticias.html`, `cadastroNoticias.css` e `cadastroNoticias.js`).
+  - Campos: título, data, notícia (com contador de caracteres), foto e link.
+  - Foto convertida em texto (base64) com `FileReader`, com prévia e limite de 500 KB.
+  - Link validado com `new URL()`, aceitando só `http` e `https`.
+  - Lista de notícias cadastradas, criada pelo DOM, com botão de excluir.
+  - Aviso quando o `localStorage` não tem mais espaço.
+  - Botão "Sair" no painel.
+  - Página protegida: quem não fez login volta para `login.html`.
+- Novas chaves de armazenamento:
+  - `sessionStorage`: `admin_logado` e `admin_usuario`.
+  - `localStorage`: `noticias_cadastradas`, com objetos no formato `{ id, titulo, data, texto, imagem, link }`.
+- Função `lembrarUsuario` no `cookies.js`, chamada pelo `login.js` só quando o login dá certo.
+- Página "Painel Administrativo" incluída em `NOMES_PAGINAS`, para o link "Continuar de onde parou".
+
+### Alterado
+- `iniciarLembrarUsuario` no `cookies.js` agora só preenche o campo de usuário e marca a caixa. A gravação do cookie foi para `lembrarUsuario`.
+- `login.html` passou a carregar também o `login.js`.
+
+### Corrigido
+- Conflito entre o evento de envio do `cookies.js` e o do `login.js`: com senha errada, a mensagem de erro era sobrescrita e o cookie `usuario_lembrado` era salvo mesmo assim.
+- Tag `</head>` duplicada em `cadastroNoticias.html`.
+- Conflito de merge no `login.html`, resolvido juntando os `<script>` e `<link>` dos dois lados.
