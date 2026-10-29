@@ -1,0 +1,34 @@
+.oculto-js { display: none !important; }
+
+.controle-fonte { display: inline-flex; gap: 4px; margin-left: 8px; }
+.controle-fonte button {
+  cursor: pointer; padding: 4px 8px; border: 1px solid currentColor;
+  border-radius: 6px; background: transparent; color: inherit; font: inherit;
+}
+.controle-fonte button:disabled { opacity: .4; cursor: not-allowed; }
+
+.btn-favorito {
+  cursor: pointer; padding: 4px 10px; border: 1px solid #c0392b;
+  border-radius: 6px; background: transparent; color: #c0392b; font: inherit;
+}
+.btn-favorito[aria-pressed="true"] { background: #c0392b; color: #fff; }
+
+.selo-lida {
+  display: inline-block; margin-left: 8px; padding: 2px 8px;
+  border-radius: 10px; background: #2e7d32; color: #fff; font-size: .8em;
+}
+.noticia-item.lida { opacity: .8; }
+
+.vereador.favorito { border-left: 4px solid #f1c40f; }
+
+.filtro-noticias { margin: 16px 0; }
+.filtro-noticias select { padding: 4px 8px; font: inherit; }
+
+.com-fechar { position: relative; }
+.fechar-card {
+  position: absolute; top: 6px; right: 6px; width: 28px; height: 28px;
+  border: none; border-radius: 50%; cursor: pointer;
+  background: rgba(0, 0, 0, .6); color: #fff; font-size: 18px; line-height: 1;
+}
+
+.mensagem-envio { margin-top: 12px; font-weight: bold; color: #2e7d32; }
