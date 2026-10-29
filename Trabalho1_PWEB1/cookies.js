@@ -11,7 +11,8 @@ const NOMES_PAGINAS = {
     "camara.html": "A Câmara",
     "faleconosco.html": "Fale Conosco",
     "noticias.html": "Notícias",
-    "login.html": "Login"
+    "login.html": "Login",
+    "cadastroNoticias.html": "Painel Administrativo"
 };
 
 function setCookie(nome, valor, dias) {
@@ -106,30 +107,22 @@ function iniciarLembrarUsuario() {
 
     const campoUsuario = document.getElementById("usuario");
     const caixa = document.getElementById("lembrar");
-    const mensagem = document.getElementById("mensagem-login");
 
-    // Se há um usuário guardado, já preenche o campo e marca a caixa.
     const salvo = getCookie(COOKIES.USUARIO);
     if (salvo) {
         campoUsuario.value = salvo;
         caixa.checked = true;
     }
+}
 
-    // Evento de envio do formulário.
-    formulario.addEventListener("submit", function (evento) {
-        // Não há servidor: impede o envio, que colocaria a senha na URL.
-        evento.preventDefault();
+function lembrarUsuario(usuario) {
+    const caixa = document.getElementById("lembrar");
 
-        if (caixa.checked && cookiesAceitos()) {
-            setCookie(COOKIES.USUARIO, campoUsuario.value.trim(), 30);
-            mensagem.textContent = "Login simulado. Usuário lembrado por 30 dias.";
-        } else if (caixa.checked) {
-            mensagem.textContent = "Login simulado. Aceite os cookies para lembrar o usuário.";
-        } else {
-            apagarCookie(COOKIES.USUARIO);
-            mensagem.textContent = "Login simulado. Usuário não será lembrado.";
-        }
-    });
+    if (caixa.checked && cookiesAceitos()) {
+        setCookie(COOKIES.USUARIO, usuario, 30);
+    } else if (!caixa.checked) {
+        apagarCookie(COOKIES.USUARIO);
+    }
 }
 document.addEventListener("DOMContentLoaded", function () {
     iniciarBannerCookies();

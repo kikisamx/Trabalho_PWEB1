@@ -1,0 +1,19 @@
+.previa-foto {
+    max-width: 240px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.foto-noticia {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.lista-cadastradas a {
+    display: inline-block;
+    margin-right: 12px;
+}
