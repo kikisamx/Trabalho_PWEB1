@@ -1,0 +1,17 @@
+Entrega 1
+
+Adicionado:
+- Bootstrap 5.3.3 via CDN nas seis páginas HTML: index, notícias, Câmara,
+  fale conosco, login e cadastro de notícias.
+- Arquivo css/bootstrap.css com estilos personalizados para complementar
+  o Bootstrap e manter a identidade visual do site.
+- Classes do Bootstrap em elementos existentes, incluindo container, row,
+  card, form-control e table.
+
+Modificado:
+- Cabeçalho e navegação reorganizados para telas grandes e celulares.
+- Barra de pesquisa ampliada em aproximadamente 90 px no desktop, mantendo
+  comportamento responsivo em telas menores.
+- Cartões de notícias e vereadores, formulários, tabela de contatos e rodapé
+  receberam ajustes visuais, como cores, espaçamentos, bordas e sombras.
+- Estilos de foco e preferência por movimento reduzido incluídos.
