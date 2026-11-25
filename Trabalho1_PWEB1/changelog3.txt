@@ -26,6 +26,7 @@ Adicionado:
   com registro de visitas e opção para fechar o cartão "Saiba Mais".
 
 Modificado:
+- Vite adaptado para a nossa página.
 - Estilos existentes e imagens reutilizados pela aplicação React.
 - Arquivos de entrada do Vite atualizados com o idioma e o título do site,
   e os estilos padrão da página de exemplo removidos.
