@@ -15,3 +15,19 @@ Modificado:
 - Cartões de notícias e vereadores, formulários, tabela de contatos e rodapé
   receberam ajustes visuais, como cores, espaçamentos, bordas e sombras.
 - Estilos de foco e preferência por movimento reduzido incluídos.
+
+Entrega 2
+
+Adicionado:
+- Aplicação React com Vite na pasta frontend.
+- Página inicial da Câmara em React, com cabeçalho, navegação, apresentação,
+  cartões de notícias, banner de contato e rodapé.
+- Busca de notícias, alternância entre tema claro e escuro, aviso de cookies
+  com registro de visitas e opção para fechar o cartão "Saiba Mais".
+
+Modificado:
+- Estilos existentes e imagens reutilizados pela aplicação React.
+- Arquivos de entrada do Vite atualizados com o idioma e o título do site,
+  e os estilos padrão da página de exemplo removidos.
+- Migração limitada à página inicial; as demais páginas continuam em HTML.
+- Build de produção e ESLint executados com sucesso.
