@@ -26,6 +26,7 @@ Adicionado:
   com registro de visitas e opção para fechar o cartão "Saiba Mais".
 - Arquivo frontend/vite.site.config.js criado para permitir a navegação
   entre as páginas HTML durante o desenvolvimento.
+- Arquivo index.html na raiz criado para abrir a página inicial ao acessar o site.
 
 Modificado:
 - Configuração do Vite ajustada para substituir a página de exemplo pelas informações da Câmara.
