@@ -20,15 +20,19 @@ Entrega 2
 
 Adicionado:
 - Aplicação React com Vite na pasta frontend.
-- Página inicial da Câmara em React, com cabeçalho, navegação, apresentação,
+- Página inicial em React com cabeçalho, navegação, apresentação da Câmara,
   cartões de notícias, banner de contato e rodapé.
 - Busca de notícias, alternância entre tema claro e escuro, aviso de cookies
   com registro de visitas e opção para fechar o cartão "Saiba Mais".
+- Arquivo frontend/vite.site.config.js criado para permitir a navegação
+  entre as páginas HTML durante o desenvolvimento.
 
 Modificado:
-- Vite adaptado para a nossa página.
-- Estilos existentes e imagens reutilizados pela aplicação React.
-- Arquivos de entrada do Vite atualizados com o idioma e o título do site,
-  e os estilos padrão da página de exemplo removidos.
-- Migração limitada à página inicial; as demais páginas continuam em HTML.
+- Configuração do Vite ajustada para substituir a página de exemplo pelas informações da Câmara.
+- npm run dev abre as páginas HTML corretas; npm run dev:react abre a versão React.
+- Estilos e imagens existentes foram reutilizados pela aplicação React.
+- Arquivos de entrada do Vite atualizados com o idioma e o título do site;
+  estilos padrão da página de exemplo removidos.
+- Apenas a página inicial foi migrada para React; as outras continuam em HTML.
 - Build de produção e ESLint executados com sucesso.
+
