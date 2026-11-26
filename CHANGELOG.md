@@ -93,3 +93,13 @@
 - Conflito entre o evento de envio do `cookies.js` e o do `login.js`: com senha errada, a mensagem de erro era sobrescrita e o cookie `usuario_lembrado` era salvo mesmo assim.
 - Tag `</head>` duplicada em `cadastroNoticias.html`.
 - Conflito de merge no `login.html`, resolvido juntando os `<script>` e `<link>` dos dois lados.
+
+## 26/11/2026
+
+### Adicionado
+- Perfis novos adicinados na pagina "A Câmara", com cargos, biografias e e-mails.
+
+### Alterado
+- Título da página "A Câmara" para "Vereadores e Equipe".
+- Nomes, cargos, biografias, e-mails e fotos dos 12 integrantes exibidos na página da Câmara.
+- Tabela de contatos para refletir os 12 integrantes atuais e suas funções, removendo os contatos antigos.
