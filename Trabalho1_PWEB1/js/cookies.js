@@ -12,7 +12,10 @@ const NOMES_PAGINAS = {
     "faleconosco.html": "Fale Conosco",
     "noticias.html": "Notícias",
     "login.html": "Login",
-    "cadastroNoticias.html": "Painel Administrativo"
+    "cadastroNoticias.html": "Painel Administrativo",
+    "cadastroVereadores.html": "Painel Administrativo",
+    "cadastroTesouro.html": "Painel Administrativo",
+    "tesouro.html": "Tesouro"
 };
 
 function setCookie(nome, valor, dias) {
