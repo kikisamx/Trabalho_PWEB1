@@ -1,0 +1,51 @@
+:root {
+    --cor-principal: #1B3A57;
+    --cor-secundaria: #4A7A96;
+    --cor-fundo: #F2F2F2;
+    --cor-texto: #222;
+    --cor-pagina: #fff;
+    --cor-link: #1B3A57;
+    --cor-titulo: #1B3A57;
+}
+
+h1{
+    color: var(--cor-link);
+}
+h3{
+    color: #1B3A57;
+    font-weight: 600;
+    font-size: large;
+}
+.cardProjeto {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10%;
+    margin-top: 5vh;
+    background-color: white;
+    box-shadow: -4px 4px 12px #d3d3d3;
+}
+.cardProjeto p{
+    margin: 4%;
+    font-weight: 100;
+    text-align: justify;
+    color: var(--cor-texto);
+    font-size: small;
+}
+body{
+    background-color: var(--cor-fundo);
+}
+.cardIcones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    height: 4vh;
+    width: 100%;
+    font-size: smaller;
+}
+
+.cardIcones img {
+    width: 20px;
+    cursor: pointer;
+}

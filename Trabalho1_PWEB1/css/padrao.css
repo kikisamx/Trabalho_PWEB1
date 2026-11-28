@@ -98,6 +98,7 @@ header {
     padding: 16px 24px;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 nav{
