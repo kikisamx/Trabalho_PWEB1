@@ -27,6 +27,18 @@ Adicionado:
 - Arquivo frontend/vite.site.config.js criado para permitir a navegação
   entre as páginas HTML durante o desenvolvimento.
 - Arquivo index.html na raiz criado para abrir a página inicial ao acessar o site.
+- Painel administrativo ampliado: além de notícias, agora é possível cadastrar
+  vereadores/equipe e lançamentos do tesouro (receitas e despesas).
+- Menu "Notícias | Vereadores | Tesouro" no topo das páginas do painel.
+- Página cadastroVereadores.html com nome, cargo, e-mail, biografia e foto
+  (máx. 500 KB), lista de cadastrados e botão Excluir.
+- Página cadastroTesouro.html com descrição, tipo, categoria, valor e data,
+  lista de lançamentos e resumo de receitas, despesas e saldo.
+- Página pública tesouro.html com totais, tabela de lançamentos ordenada
+  por data e filtro por receita ou despesa.
+- Link "Tesouro" no cabeçalho de todas as páginas, inclusive na versão React.
+- Arquivos js/admin.js, js/cadastroVereadores.js, js/cadastroTesouro.js,
+  js/tesouro.js, js/tesouroDados.js e js/vereadoresCadastrados.js.
 
 Modificado:
 - Configuração do Vite ajustada para substituir a página de exemplo pelas informações da Câmara.
@@ -36,4 +48,15 @@ Modificado:
   estilos padrão da página de exemplo removidos.
 - Apenas a página inicial foi migrada para React; as outras continuam em HTML.
 - Build de produção e ESLint executados com sucesso.
+- camara.html passa a exibir também os vereadores cadastrados no painel,
+  com o mesmo visual dos já existentes. Favoritar e pesquisar funcionam
+  neles.
+- cadastroNoticias.html recebeu o menu do painel.
+- cookies.js reconhece as novas páginas em "Continuar de onde parou".
+- novos-estilos.css recebeu os estilos do menu do painel, do resumo e da
+  tabela do tesouro, com suporte ao tema escuro.
+- App.jsx recebeu o link "Tesouro" na navegação.
+- Os dados dos novos cadastros ficam no localStorage do navegador, assim
+  como as notícias cadastradas. Ao excluir um vereador, o favorito dele
+  também é removido.
 

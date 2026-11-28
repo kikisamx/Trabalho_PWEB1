@@ -67,6 +67,7 @@ const pageNames = {
   'noticias.html': 'Notícias',
   'login.html': 'Login',
   'cadastroNoticias.html': 'Painel Administrativo',
+  'tesouro.html': 'Tesouro',
 }
 
 function readCookie(name) {
@@ -167,6 +168,7 @@ function App() {
             <li><a href="/html/camara.html">A Câmara</a></li>
             <li><a href="/html/faleconosco.html">Fale Conosco</a></li>
             <li><a href="/html/noticias.html">Notícias</a></li>
+            <li><a href="/html/tesouro.html">Tesouro</a></li>
             <li><a href="/html/login.html">Login</a></li>
           </ul>
         </nav>
