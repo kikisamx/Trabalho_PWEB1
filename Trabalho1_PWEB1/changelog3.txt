@@ -42,6 +42,11 @@ Adicionado:
   inclusive o "Tesouro" na versão React.
 - Arquivos js/admin.js, js/cadastroVereadores.js, js/cadastroTesouro.js,
   js/tesouro.js, js/tesouroDados.js e js/vereadoresCadastrados.js.
+- Página projetosDeLei.html (com css/projetosDeLei.css) com cards de
+  projetos de lei: título, autor, ofício, data e link para o arquivo.
+  Cada card tem um selo de status (Aprovado, Em tramitação, Em análise,
+  Rejeitado e Arquivado) feito com badges do Bootstrap, com um projeto
+  de exemplo para cada status.
 
 Modificado:
 - Configuração do Vite ajustada para substituir a página de exemplo pelas informações da Câmara.

@@ -141,3 +141,13 @@
 
 ### Corrigido
 - Conflito de merge no `login.html` ao puxar o remoto.
+
+### Adicionado
+- Página "Projetos de Lei" (`projetosDeLei.html` e `projetosDeLei.css`), com cards de projetos, autor, ofício, data e link para o arquivo.
+  - Selo de status em cada card, com badges do Bootstrap: Aprovado, Em tramitação, Em análise, Rejeitado e Arquivado.
+  - Cinco projetos de exemplo, um para cada status.
+  - Status à esquerda e link do arquivo à direita (flexbox no `.cardIcones`).
+
+### Alterado
+- Cards de projetos de lei com cor própria no tema escuro (`padrao.css`).
+- `projetosDeLei.html` passou a carregar `cookies.js`, `tema.js`, `armazenamento.js` e `preferencias.js`, para o tema escuro e o tamanho da fonte funcionarem na página.
