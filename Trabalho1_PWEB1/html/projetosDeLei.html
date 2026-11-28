@@ -6,8 +6,14 @@
     <title>Câmara Municipal de Vereadores de Picos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/padrao.css">    
-    <link rel="stylesheet" href="../css/novos-estilos.css">
     <link rel="stylesheet" href="../css/projetosDeLei.css">
+    <link rel="stylesheet" href="../css/novos-estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/cookies.js" defer></script>
+    <script src="../js/tema.js" defer></script>
+    <script src="../js/armazenamento.js" defer></script>
+    <script src="../js/preferencias.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
 </head>
 <body>
     <header>
@@ -15,11 +21,10 @@
             <ul>
                 <li><a href="index.html"><img src="../imgs/Camara_PicosNOVO.png" alt="Camara de Picos" class="logo"></a></li>
                 <li><a href="camara.html">A Câmara</a></li>
-                <li><a href="projetosDeLei.html">Projetos de lei</a></li>
-                <!-- <li><a href="#">Agenda</a></li> -->
+                <li><a href="projetosDeLei.html">Projetos de Lei</a></li>
                 <li><a href="faleconosco.html">Fale Conosco</a></li>
                 <li><a href="noticias.html">Notícias</a></li>
-                <!-- <li><a href="login.html"><img src="../imgs/icologin.png" alt="icone de login" class="loginico"></a></li> -->
+                <li><a href="tesouro.html">Tesouro</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -36,7 +41,7 @@
     </header>
 
     <main>
-        <h1><strong>Projetos de lei</strong></h1>
+        <h1>Projetos de lei</h1>
         <div class="cardProjeto">
             <h3>Construção de matadouro</h3>
             <p>
@@ -48,13 +53,100 @@
             </p>
             <hr>
             <div class="cardIcones">
+                <span class="status badge text-bg-success">
+                    Aprovado
+                </span>
                 <a href="">
                     Arquivo
                     <img src="../imgs/pdf.png" alt="Arquivo do projeto de lei">
                 </a>
             </div>
         </div>
-    </main>
+
+        <div class="cardProjeto">
+            <h3>Ampliação do horário da UBS do bairro Junco</h3>
+            <p>
+                Projeto de autoria do vereador <a href="camara.html">João Pedro</a> propõe a ampliação do horário de atendimento da Unidade Básica de Saúde do bairro Junco, com funcionamento até as 20h e contratação de mais profissionais de enfermagem.
+                A medida busca atender trabalhadores que não conseguem ir à unidade no horário comercial.
+            </p>
+            <p>
+                OFICIO N°.003/2026 - Picos Piauí <time datetime="2026-11-27">27 de novembro de 2026</time>
+            </p>
+            <hr>
+            <div class="cardIcones">
+                <span class="status badge text-bg-warning">
+                    Em tramitação
+                </span>
+                <a href="">
+                    Arquivo
+                    <img src="../imgs/pdf.png" alt="Arquivo do projeto de lei">
+                </a>
+            </div>
+        </div>
+
+        <div class="cardProjeto">
+            <h3>Coleta seletiva nos bairros do município</h3>
+            <p>
+                Projeto da vereadora <a href="camara.html">Valéria Almeida</a> institui o programa de coleta seletiva de lixo em todos os bairros de Picos, com pontos de entrega voluntária e campanhas educativas nas escolas municipais.
+                A proposta foi encaminhada para análise das comissões e votação em plenário.
+            </p>
+            <p>
+                OFICIO N°.004/2026 - Picos Piauí <time datetime="2026-11-27">27 de novembro de 2026</time>
+            </p>
+            <hr>
+            <div class="cardIcones">
+                <span class="status badge text-bg-info">
+                    Em análise
+                </span>
+                <a href="">
+                    Arquivo
+                    <img src="../imgs/pdf.png" alt="Arquivo do projeto de lei">
+                </a>
+            </div>
+        </div>
+
+        <div class="cardProjeto">
+            <h3>Criação de taxa para uso de praças públicas</h3>
+            <p>
+                Projeto da vereadora <a href="camara.html">Tidinha Meneghel</a> propunha a cobrança de taxa para a realização de eventos particulares em praças públicas do município.
+                Após votação em plenário, a proposta foi rejeitada pela maioria dos vereadores, sob o argumento de que o uso dos espaços públicos deve ser livre e gratuito.
+            </p>
+            <p>
+                OFICIO N°.005/2026 - Picos Piauí <time datetime="2026-11-27">27 de novembro de 2026</time>
+            </p>
+            <hr>
+            <div class="cardIcones">
+                <span class="status badge text-bg-danger">
+                    Rejeitado
+                </span>
+                <a href="">
+                    Arquivo
+                    <img src="../imgs/pdf.png" alt="Arquivo do projeto de lei">
+                </a>
+            </div>
+        </div>
+
+        <div class="cardProjeto">
+            <h3>Instalação de Wi-Fi gratuito nos terminais de ônibus</h3>
+            <p>
+                Projeto da vereadora <a href="camara.html">Igona</a> prevê a instalação de pontos de internet gratuita nos terminais de transporte público de Picos.
+                A proposta foi arquivada a pedido da autora, por já existir programa estadual com o mesmo objetivo.
+            </p>
+            <p>
+                OFICIO N°.006/2026 - Picos Piauí <time datetime="2026-11-27">27 de novembro de 2026</time>
+            </p>
+            <hr>
+            <div class="cardIcones">
+                <span class="status badge text-bg-secondary">
+                    Arquivado
+                </span>
+                <a href="">
+                    Arquivo
+                    <img src="../imgs/pdf.png" alt="Arquivo do projeto de lei">
+                </a>
+            </div>
+        </div>
+            </main>
 
 
     <footer>

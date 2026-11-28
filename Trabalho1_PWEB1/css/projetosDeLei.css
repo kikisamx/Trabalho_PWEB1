@@ -8,10 +8,10 @@
     --cor-titulo: #1B3A57;
 }
 
-h1{
+main h1{
     color: var(--cor-link);
 }
-h3{
+main h3{
     color: #1B3A57;
     font-weight: 600;
     font-size: large;
@@ -20,14 +20,14 @@ h3{
     /* border: 1px solid black; */
     border-radius: 10px;
     padding: 20px;
-    margin: 10%;
-    margin-top: 5vh;
+    margin: 4vh auto;
     background-color: white;
     box-shadow: -4px 4px 12px #d3d3d3;
+    width: 90%;
 }
 .cardProjeto p{
     margin: 4%;
-    font-weight: 100;
+    font-weight: 400;
     text-align: justify;
     color: var(--cor-texto);
     font-size: small;
@@ -37,15 +37,22 @@ body{
 }
 .cardIcones {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 8px;
     height: 4vh;
     width: 100%;
     font-size: smaller;
+    justify-content: space-between;
 }
 
 .cardIcones img {
     width: 20px;
     cursor: pointer;
+}
+
+.status{
+    left: 0;
+    margin-right: auto;
+    font-size: small;
+    font-weight:normal;
 }

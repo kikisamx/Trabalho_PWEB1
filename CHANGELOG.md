@@ -103,3 +103,41 @@
 - Título da página "A Câmara" para "Vereadores e Equipe".
 - Nomes, cargos, biografias, e-mails e fotos dos 12 integrantes exibidos na página da Câmara.
 - Tabela de contatos para refletir os 12 integrantes atuais e suas funções, removendo os contatos antigos.
+
+## 27/11/2026 - Entrega parcial 2 (Trabalho 03)
+
+### Adicionado
+- Aplicação React com Vite na pasta `frontend`.
+  - Página inicial em React com cabeçalho, navegação, apresentação da Câmara, cartões de notícias, banner de contato e rodapé.
+  - Busca de notícias, alternância entre tema claro e escuro, aviso de cookies com registro de visitas e opção para fechar o cartão "Saiba Mais".
+  - Link "Tesouro" na navegação (`App.jsx`).
+- `frontend/vite.site.config.js`, para navegar entre as páginas HTML durante o desenvolvimento.
+- `index.html` na raiz, que abre a página inicial ao acessar o site.
+- Página "Projetos de Lei" (`projetosDeLei.html` e `projetosDeLei.css`), com cards de projetos, autor, ofício, data e link para o arquivo.
+- Painel administrativo ampliado, com menu "Notícias | Vereadores | Tesouro".
+  - `cadastroVereadores.html`: nome, cargo, e-mail, biografia e foto (máx. 500 KB), com lista de cadastrados e botão Excluir.
+  - `cadastroTesouro.html`: descrição, tipo, categoria, valor e data, com lista de lançamentos e resumo de receitas, despesas e saldo.
+- Página pública `tesouro.html`, com totais, tabela de lançamentos ordenada por data e filtro por receita ou despesa.
+- Link "Tesouro" e link "Projetos de Lei" no cabeçalho de todas as páginas.
+- Novos arquivos JS: `admin.js`, `cadastroVereadores.js`, `cadastroTesouro.js`, `tesouro.js`, `tesouroDados.js` e `vereadoresCadastrados.js`.
+- Estilos do menu do painel, do resumo e da tabela do tesouro no `novos-estilos.css`, com suporte ao tema escuro.
+
+### Alterado
+- Configuração do Vite ajustada para substituir a página de exemplo pelas informações da Câmara.
+  - `npm run dev` abre as páginas HTML.
+  - `npm run dev:react` abre a versão React.
+- Arquivos de entrada do Vite atualizados com idioma e título do site, e estilos padrão da página de exemplo removidos.
+- Estilos e imagens existentes reutilizados pela aplicação React.
+- `camara.html` passa a exibir também os vereadores cadastrados no painel, com o mesmo visual dos existentes. Favoritar e pesquisar funcionam neles.
+- `cadastroNoticias.html` recebeu o menu do painel.
+- `cookies.js` reconhece as novas páginas em "Continuar de onde parou".
+- Cards de projetos de lei com cor própria no tema escuro (`padrao.css`).
+
+### Observações
+- Apenas a página inicial foi migrada para React. As outras continuam em HTML.
+- Os dados dos novos cadastros ficam no `localStorage`, assim como as notícias cadastradas.
+- Ao excluir um vereador, o favorito dele também é removido.
+- Build de produção e ESLint executados com sucesso.
+
+### Corrigido
+- Conflito de merge no `login.html` ao puxar o remoto.

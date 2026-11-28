@@ -27,6 +27,8 @@ Adicionado:
 - Arquivo frontend/vite.site.config.js criado para permitir a navegação
   entre as páginas HTML durante o desenvolvimento.
 - Arquivo index.html na raiz criado para abrir a página inicial ao acessar o site.
+- Página projetosDeLei.html (com css/projetosDeLei.css) com cards de
+  projetos de lei: título, autor, ofício, data e link para o arquivo.
 - Painel administrativo ampliado: além de notícias, agora é possível cadastrar
   vereadores/equipe e lançamentos do tesouro (receitas e despesas).
 - Menu "Notícias | Vereadores | Tesouro" no topo das páginas do painel.
@@ -36,7 +38,8 @@ Adicionado:
   lista de lançamentos e resumo de receitas, despesas e saldo.
 - Página pública tesouro.html com totais, tabela de lançamentos ordenada
   por data e filtro por receita ou despesa.
-- Link "Tesouro" no cabeçalho de todas as páginas, inclusive na versão React.
+- Links "Tesouro" e "Projetos de Lei" no cabeçalho de todas as páginas,
+  inclusive o "Tesouro" na versão React.
 - Arquivos js/admin.js, js/cadastroVereadores.js, js/cadastroTesouro.js,
   js/tesouro.js, js/tesouroDados.js e js/vereadoresCadastrados.js.
 
@@ -55,8 +58,11 @@ Modificado:
 - cookies.js reconhece as novas páginas em "Continuar de onde parou".
 - novos-estilos.css recebeu os estilos do menu do painel, do resumo e da
   tabela do tesouro, com suporte ao tema escuro.
+- padrao.css recebeu a cor dos cards de projetos de lei no tema escuro.
 - App.jsx recebeu o link "Tesouro" na navegação.
 - Os dados dos novos cadastros ficam no localStorage do navegador, assim
   como as notícias cadastradas. Ao excluir um vereador, o favorito dele
   também é removido.
 
+Corrigido:
+- Conflito de merge no login.html ao puxar o repositório remoto.
