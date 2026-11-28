@@ -100,3 +100,127 @@ header .controle-fonte button:disabled {
     font-weight: bold;
     color: #2e7d32;
 }
+
+.menu-admin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.menu-admin a {
+    padding: 8px 16px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 6px;
+    background: var(--cor-fundo);
+    color: var(--cor-link);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-admin a[aria-current="page"] {
+    background: var(--cor-principal);
+    color: #fff;
+}
+
+.form-noticia select {
+    padding: 8px;
+    font: inherit;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: var(--cor-pagina);
+    color: var(--cor-texto);
+}
+
+.lista-cadastradas button {
+    margin-top: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.resumo-admin {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.resumo-tesouro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.resumo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 20px;
+    border: 1px solid rgba(23, 59, 87, 0.09);
+    border-radius: 0.9rem;
+    background: var(--cor-pagina);
+    box-shadow: var(--sombra-suave);
+}
+
+.resumo-item strong {
+    font-size: 1.4em;
+}
+
+.positivo {
+    color: #2e7d32;
+}
+
+.negativo {
+    color: #c0392b;
+}
+
+[data-tema="escuro"] .positivo {
+    color: #66bb6a;
+}
+
+[data-tema="escuro"] .negativo {
+    color: #ef7b6f;
+}
+
+.tabela-rolavel {
+    overflow-x: auto;
+}
+
+.tabela-tesouro {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--cor-pagina);
+    color: var(--cor-texto);
+}
+
+.tabela-tesouro th,
+.tabela-tesouro td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.tabela-tesouro th {
+    background: var(--cor-principal);
+    color: #fff;
+}
+
+.tabela-tesouro td.valor {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.tabela-tesouro tr.tipo-receita td.valor {
+    color: #2e7d32;
+}
+
+.tabela-tesouro tr.tipo-despesa td.valor {
+    color: #c0392b;
+}
+
+[data-tema="escuro"] .tabela-tesouro tr.tipo-receita td.valor {
+    color: #66bb6a;
+}
+
+[data-tema="escuro"] .tabela-tesouro tr.tipo-despesa td.valor {
+    color: #ef7b6f;
+}
